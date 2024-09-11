@@ -1,4 +1,5 @@
-# Belly Button Challenge
+# Belly Button Biodiversity Dashboard
+
 
 ![Dashboard Preview](https://github.com/SakinaJaffri/Belly-Button-Challenge/assets/146900226/410416e7-f1aa-4a8b-afa4-5c9022a0139c)
 
