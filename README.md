@@ -1,43 +1,60 @@
-# Belly-Button-Challenge
-![image](https://github.com/SakinaJaffri/Belly-Button-Challenge/assets/146900226/410416e7-f1aa-4a8b-afa4-5c9022a0139c)
+# Belly Button Challenge
 
+![Dashboard Preview](https://github.com/SakinaJaffri/Belly-Button-Challenge/assets/146900226/410416e7-f1aa-4a8b-afa4-5c9022a0139c)
 
-## Background:
-This interactive dashboard is designed to explore the Belly Button Biodiversity dataset, which records the microbial composition of human navels in JSON format. The dataset reveals that a small number of microbial species, known as operational taxonomic units (OTUs), are prevalent in more than 70% of individuals, while the remainder are relatively rare.
+## Project Overview
 
-## Functions:
-1. **init():**
-   - Retrieves the dataset using D3.js.
-   - Calls the getData() and panel() functions to prepare the data for visualization and update the demographic information panel, respectively.
+This project involves building an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbial composition of human navels. The goal is to visualize the prevalence of microbial species, also known as operational taxonomic units (OTUs), across different individuals.
 
-2. **updateChange():**
-   - Triggered when an option in the dropdown menu changes.
-   - Retrieves the selected option and updates the demographic information panel and visualizations using the getData() and panel() functions.
+## Functions and Features
 
-3. **optionChanged(selectedValue):**
-   - Plots the data using Plotly based on the selected value from the dropdown menu.
-   - Clears existing HTML elements before plotting new data.
+### 1. **init()**
+- Retrieves the dataset using D3.js.
+- Calls helper functions (`getData()` and `panel()`) to initialize the visualizations and demographic information panel.
 
-4. **panel(response, dataset):**
-   - Retrieves required data and updates the demographic information panel.
-   - Clears existing panel values before adding new ones.
+### 2. **updateChange()**
+- Triggered when a new option is selected from the dropdown.
+- Updates the visualizations and demographic panel for the selected Test Subject ID.
 
-## Visualizations:
-1. **Bar Chart:**
-   - Displays the top 10 OTUs found in the selected individual based on the Test Subject ID.
+### 3. **optionChanged(selectedValue)**
+- Updates the charts (bar, bubble, and gauge) using the selected Test Subject ID.
+- Clears any previous data before plotting new visualizations.
 
-2. **Bubble Chart:**
-   - Shows the distribution of OTUs.
-   - X-axis: OTU IDs.
-   - Y-axis: Sample values.
-   - Marker size indicates sample values, and marker color represents OTU IDs.
-   - Hover text displays OTU labels.
+### 4. **panel(response, dataset)**
+- Populates the demographic information panel with data for the selected individual.
+- Clears the existing data before adding new demographic details.
 
-3. **Gauge Chart:**
-   - Indicates the number of times test subjects washed their belly buttons per week.
+## Visualizations
 
-## Additional Features:
-- Options are dynamically added to the dropdown menu with values as attributes.
+### 1. **Bar Chart**
+- Displays the top 10 OTUs for the selected individual based on the Test Subject ID.
 
-## Conclusion:
-This dashboard provides an interactive platform for exploring the Belly Button Biodiversity dataset, allowing users to visualize and analyze the microbial composition of human navels. With its user-friendly interface and informative visualizations, it offers valuable insights into the diversity of microbes inhabiting the human body.
+### 2. **Bubble Chart**
+- Visualizes the distribution of OTUs.
+  - **X-axis**: OTU IDs.
+  - **Y-axis**: Sample values.
+  - **Marker Size**: Reflects the sample values.
+  - **Marker Color**: Represents OTU IDs.
+
+### 3. **Gauge Chart**
+- Displays how many times the test subject washed their belly button per week.
+
+## How to Use
+
+1. Clone the repository to your local machine.
+2. Open the `index.html` file in your browser.
+3. Explore the interactive visualizations by selecting different Test Subject IDs from the dropdown.
+
+## Technologies Used
+
+- **D3.js**: For data retrieval and manipulation.
+- **Plotly.js**: For creating dynamic charts (bar, bubble, and gauge charts).
+- **HTML/CSS/JavaScript**: For creating the dashboard layout and interactivity.
+
+## Conclusion
+
+This dashboard provides a user-friendly interface for exploring the microbial composition of human belly buttons. By dynamically updating charts and demographic information, it offers insightful visualizations of the diversity of microbial species found in different individuals.
+
+## Contributors
+
+- **Sakina Jaffri** - Developed the dashboard and visualizations.
